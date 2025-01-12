@@ -1,7 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 50px 50px 0 50px;
-  background-color: #faf9f6;
+  background-color: #98caf9;
   display: flex;
   flex-direction: column;
   min-height: 95vh;
@@ -23,10 +23,11 @@ footer {
   height: 200px;
   float: left;
   margin-right: 50px;
+  margin-left: 50px;
 }
 
 .card {
-  width: 45%;
+  width: 50%;
 }
 
 .left {
@@ -64,4 +65,17 @@ footer {
     display: inline;
     object-fit: cover;
   }
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Выравнивание по центру по горизонтали */
+  align-items: center; /* Выравнивание по центру по вертикали */
+  height: 100vh; /* Высота контейнера */
+}
+
+.item {
+  background: lightblue;
+  padding: 20px;
+  margin: 10px;
 }

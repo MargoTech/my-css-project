@@ -69,10 +69,9 @@ footer {
   color: var(--color5);
 }
 
-/* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
   .flex-container {
-    flex-direction: column; /* Ссылки размещаются вертикально на мобильных устройствах */
+    flex-direction: column;
     align-items: flex-start; /* Выравнивание по левому краю */
   }
 

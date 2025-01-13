@@ -69,32 +69,6 @@ footer {
   margin-top: 10px; /* Отступ сверху */
 }
 
-.styled-list {
-  list-style-type: none; /* Убираем стандартные маркеры */
-  padding: 0; /* Убираем отступы */
-  text-align: left; /* Выравнивание текста по левому краю */
-}
-
-.styled-list li {
-  margin: 10px 0; /* Отступ между пунктами списка */
-  padding-left: 25px; /* Отступ для маркера */
-  position: relative; /* Для абсолютного позиционирования маркера */
-  font-size: 1rem; /* Размер текста */
-  color: #555; /* Цвет текста */
-}
-
-/* Кастомный маркер списка */
-.styled-list li::before {
-  content: "✔"; /* Иконка или символ */
-  color: #007bff; /* Цвет маркера */
-  font-weight: bold;
-  position: absolute;
-  left: 0; /* Расположение слева */
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.2rem;
-}
-
 button {
   padding: 10px 20px; /* Внутренние отступы кнопок */
   border: none; /* Убираем стандартную границу */
@@ -107,4 +81,27 @@ button {
 
 button:hover {
   background-color: #0056b3; /* Изменение цвета при наведении */
+}
+
+.styled-list {
+  list-style-type: none; /* Убираем стандартные маркеры */
+  padding: 0; /* Убираем отступы */
+}
+
+.styled-list li {
+  position: relative;
+  padding-left: 30px; /* Добавляем отступ для кастомного маркера */
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #34495e;
+}
+
+/* Кастомный маркер для списка */
+.styled-list li::before {
+  content: "✔"; /* Символ маркера */
+  position: absolute;
+  left: 0;
+  color: #3498db; /* Цвет маркера */
+  font-size: 1.2rem;
+  line-height: 1;
 }

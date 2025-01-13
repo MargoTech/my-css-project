@@ -1,7 +1,15 @@
+:root {
+  --color1: #e4e0e1;
+  --color2: #d6c0b3;
+  --color3: #ab886d;
+  --color4: #493628;
+  --color5: #131010;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 50px 50px 0 50px;
-  background-color: #98caf9;
+  background-color: var(--color2);
   display: flex;
   flex-direction: column;
   min-height: 95vh;
@@ -10,17 +18,67 @@ body {
   flex: 1;
 }
 
+h1,
+h2 {
+  text-align: center;
+}
+
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: var(--color5);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: var(--color4);
 }
 
 footer {
   text-align: right;
-  color: midnightblue;
+  color: var(--color4);
 }
 
 .creative {
-  color: blue;
+  color: #805209;
+}
+
+.header {
+  background-color: var(--color1);
+  padding: 20px 0;
+}
+
+/* Гибкая раскладка для навигации */
+.flex-container {
+  display: flex;
+  justify-content: center; /* Центрируем элементы по горизонтали */
+  align-items: center; /* Центрируем элементы по вертикали */
+}
+
+/* Стили для ссылок */
+.flex-container a {
+  color: var(--color4);
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 20px;
+  transition: color 0.3s; /* Плавный переход цвета при наведении */
+}
+
+.flex-container a:hover {
+  color: var(--color5);
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column; /* Ссылки размещаются вертикально на мобильных устройствах */
+    align-items: flex-start; /* Выравнивание по левому краю */
+  }
+
+  .flex-container a {
+    margin: 10px 0; /* Убираем боковые отступы и увеличиваем вертикальные отступы */
+  }
 }
 
 /* Grid for Layout */
@@ -37,20 +95,20 @@ footer {
     auto-fit,
     minmax(300px, 1fr)
   ); /* Адаптивные колонки */
-  gap: 20px; /* Расстояние между карточками */
-  padding: 20px; /* Внутренний отступ */
+  gap: 20px;
+  padding: 20px;
 }
 
 .book {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: var(--color1);
+  border: 1px solid #493628;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   display: flex; /* Flexbox для выравнивания */
   flex-direction: column; /* Содержимое выравнивается по вертикали */
   align-items: center; /* Центрирование содержимого по горизонтали */
-  text-align: center; /* Текст по центру */
+  text-align: center;
 }
 
 .tile-image {
@@ -73,14 +131,14 @@ button {
   padding: 10px 20px; /* Внутренние отступы кнопок */
   border: none; /* Убираем стандартную границу */
   border-radius: 5px; /* Закруглённые углы кнопок */
-  background-color: #007bff; /* Цвет кнопки */
+  background-color: #ab886d; /* Цвет кнопки */
   color: #fff; /* Цвет текста */
   cursor: pointer; /* Указатель мыши на кнопке */
   transition: background-color 0.3s ease; /* Анимация при наведении */
 }
 
 button:hover {
-  background-color: #0056b3; /* Изменение цвета при наведении */
+  background-color: #493628; /* Изменение цвета при наведении */
 }
 
 .styled-list {
@@ -96,12 +154,11 @@ button:hover {
   color: #34495e;
 }
 
-/* Кастомный маркер для списка */
 .styled-list li::before {
-  content: "✔"; /* Символ маркера */
+  content: "✔";
   position: absolute;
   left: 0;
-  color: #3498db; /* Цвет маркера */
+  color: #493628;
   font-size: 1.2rem;
   line-height: 1;
 }

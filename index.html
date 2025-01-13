@@ -14,47 +14,65 @@
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="courses.html">Books</a></li>
-      </ul>
-    </nav>
+    <div class="page">
+      <header class="header">
+        <nav class="flex-container">
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
 
-    <div class="main">
-      <img class="logo" src="./assets/images/logo.png" alt="logo" />
       <h1>Motivational <span class="creative">Reads</span> Hub</h1>
-      <div class="left card">
-        <img
-          class="tile-image"
-          src="./assets/images/beautiful.jpg"
-          alt="hand and flower in water"
-        />
-        <h2 class="card-title">Beauty</h2>
-        <p class="card-text">
-          Welcome to the Motivational Reads Hub! Dive into the world of
-          inspirational books and transform your life one page at a time. Join
-          our book club to connect with like-minded readers and explore the
-          secrets of success, happiness, and personal growth.
-        </p>
-      </div>
+      <h2>
+        Welcome to the Motivational Reads Hub! Dive into the world of
+        inspirational books and transform your life one page at a time. Join our
+        book club to connect with like-minded readers and explore the secrets of
+        success, happiness, and personal growth
+      </h2>
 
-      <div class="right card">
-        <img
-          class="tile-image"
-          src="./assets/images/construction.jpg"
-          alt="metal structure"
-        />
-        <h2 class="card-title">Construction</h2>
-        <p class="card-text">
-          Built by our team of professional developers, we ensure the most
-          rigourous and modern websites. Built from scratch using HTML and CSS.
-          Only the best for you.
-        </p>
-      </div>
+      <main class="grid-container">
+        <div class="book">
+          <h2>Featured Book of the Month:</h2>
+          <p>
+            The 7 Habits Of Highly Effective People, Stephen R. Covey - "A
+            groundbreaking guide to mastering proactivity!"
+          </p>
+          <img
+            class="tile-image"
+            src="./assets/images/book1.jpg"
+            alt="The 7 Habits of Highly Effective People"
+          />
+          <div class="flex-container">
+            <button>Read with us</button>
+            <button>Take a course</button>
+          </div>
+        </div>
+        <div class="book">
+          <h2 class="card-title">Why Join Our Club?</h2>
+          <p class="card-text">
+            <ul>
+              <li>Engage in thought-provoking discussions.</li>
+              <li>Gain practical insights from life-changing books</li>
+              <li>Become part of a supportive and inspiring community.</li>
+            </ul>
+            <img
+            class="tile-image"
+            src="./assets/images/book2.jpg"
+            alt="The 7 Habits of Highly Effective People"
+          />
+          </p>
+
+          <div class="flex-container">
+            <button>Join Club</button>
+            <button>Take a course</button>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>© 2025 Motivational Books Club. All rights reserved.</p>
+      </footer>
     </div>
-    <footer>
-      <p>Create. Develop. Design.</p>
-    </footer>
   </body>
 </html>

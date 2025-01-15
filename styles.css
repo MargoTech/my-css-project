@@ -49,7 +49,6 @@ footer {
   padding: 20px 0;
 }
 
-/* Гибкая раскладка для навигации */
 .flex-container {
   display: flex;
   justify-content: center; /* Центрируем элементы по горизонтали */
@@ -104,9 +103,9 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  display: flex; /* Flexbox для выравнивания */
-  flex-direction: column; /* Содержимое выравнивается по вертикали */
-  align-items: center; /* Центрирование содержимого по горизонтали */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
@@ -118,12 +117,11 @@ footer {
   object-fit: contain;
 }
 
-/* Кнопки */
 .flex-container {
-  display: flex; /* Flexbox для кнопок */
-  justify-content: center; /* Центрируем кнопки */
-  gap: 10px; /* Расстояние между кнопками */
-  margin-top: 10px; /* Отступ сверху */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 button {
@@ -141,8 +139,8 @@ button:hover {
 }
 
 .styled-list {
-  list-style-type: none; /* Убираем стандартные маркеры */
-  padding: 0; /* Убираем отступы */
+  list-style-type: none;
+  padding: 0;
 }
 
 .styled-list li {

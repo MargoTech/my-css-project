@@ -1,8 +1,5 @@
-console.log("Welcome to the Motivational Reads Hub!");
-
-document.querySelector("h1").textContent =
-  "Welcome to the Motivational Reads Hub!";
-
-document.querySelector("button").addEventListener("click", function () {
-  alert("Button clicked!");
+document.querySelectorAll("button").forEach((button) => {
+  button.addEventListener("click", () => {
+    alert(`You clicked: ${button.textContent}`);
+  });
 });

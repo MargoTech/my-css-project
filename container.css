@@ -1,67 +1,10 @@
-:root {
-  --color1: #e4e0e1;
-  --color2: #d6c0b3;
-  --color3: #ab886d;
-  --color4: #493628;
-  --color5: #131010;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 50px 50px 0 50px;
-  background-color: var(--color2);
-  background-image: url("/assets/images/Back.jpeg");
-  height: 100vh; /* Занять всю высоту окна */
-  background-size: cover; /* Масштабировать, чтобы покрыть весь экран */
-  background-size: cover; /* Масштабировать, чтобы покрыть весь экран */
-  background-repeat: no-repeat; /* Убрать повторение */
-  background-position: center; /* Центрировать фон */
-  display: flex;
-  flex-direction: column;
-  min-height: 95vh;
-}
-.main {
-  flex: 1;
-}
-
-h1,
-h2 {
-  text-align: center;
-}
-
-h1 {
-  font-size: 4rem;
-  margin-bottom: 20px;
-  color: var(--color5);
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  color: var(--color4);
-}
-
-footer {
-  text-align: right;
-  color: var(--color4);
-}
-
-/* .creative {
-  color: #805209;
-} */
-
-.header {
-  background-color: var(--color1);
-  padding: 20px 0;
-}
-
 .flex-container {
   display: flex;
   justify-content: center; /* Центрируем элементы по горизонтали */
   align-items: center; /* Центрируем элементы по вертикали */
 }
 /* 
-Стили для ссылок */
+  Стили для ссылок */
 .flex-container a {
   color: var(--color4);
   text-decoration: none;
@@ -142,26 +85,4 @@ button {
 
 button:hover {
   background-color: #493628;
-}
-
-.styled-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.styled-list li {
-  position: relative;
-  padding-left: 30px; /* Добавляем отступ для кастомного маркера */
-  margin-bottom: 10px;
-  font-size: 1rem;
-  color: var(--color5);
-}
-
-.styled-list li::before {
-  content: "✔";
-  position: left;
-  left: 2;
-  color: #493628;
-  font-size: 1.5rem;
-  line-height: 1;
 }

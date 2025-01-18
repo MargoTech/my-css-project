@@ -10,7 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 50px 50px 0 50px;
   background-color: var(--color2);
-  background-image: url("/assets/images/Back.jpeg");
+  background-image: url("");
   height: 100vh; /* Занять всю высоту окна */
   background-size: cover; /* Масштабировать, чтобы покрыть весь экран */
   background-size: cover; /* Масштабировать, чтобы покрыть весь экран */
